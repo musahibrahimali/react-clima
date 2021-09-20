@@ -1,3 +1,87 @@
+<!-- Please update value in the {}  -->
+
+<h1 align="center">{Clima}</h1>
+
+<div align="center">
+   Solution for a challenge from  <a href="https://investondaba.notion.site/daba-Front-End-Advanced-Test-1-e75b281f295e4457acac147d70312ee2" target="_blank">daba front end advanced coding exercise</a>.
+</div>
+
+<div align="center">
+  <h3>
+    <a href="https://{your-demo-link.your-domain}">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/musahibrahimali/react-clima">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://investondaba.notion.site/daba-Front-End-Advanced-Test-1-e75b281f295e4457acac147d70312ee2">
+      Exercise
+    </a>
+  </h3>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+![screenshot](demo-image.png)
+
+Introduce your projects by taking a screenshot, video recordings or a gif. Try to tell us about the solution you built by answering the following:
+
+- Where can I see your demo?
+<https://react-clima.vercel.app/>
+
+- What was your experience building it.
+intriguing and chanllenging yet fun to build
+### Built With
+React.js
+Tailwind Css
+Material UI
+open weather api
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- [React](https://reactjs.org/)
+- [Vue.js](https://vuejs.org/)
+- [Tailwind](https://tailwindcss.com/)
+
+## Features
+lazy-loading
+shimmer-effects during data loading
+search places for weather data
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+What features did you develop?
+
+## How To Use
+The program by default ask and uses users location to update the weather data, and tehn comew with the search functionality
+<!-- Example: -->
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/musahibrahimali/react-clima
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
