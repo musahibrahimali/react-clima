@@ -1,0 +1,13 @@
+.weather__img{
+    background-image: url('../assets/images/Cloud-background.png');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.tooltip {
+    @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
