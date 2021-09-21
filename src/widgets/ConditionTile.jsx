@@ -24,7 +24,7 @@ function ConditionTile(props) {
                     <p className="mx-2">WSW</p>
                 </div> : 
                 <div className="shadow rounded-md w-full bg-gray-300 mt-2">
-                    <div className="bg-prog-color rounded-md text-xs leading-none py-1 text-center text-gray-700" style={{"width": `${value}`}}>{value}%</div>
+                    <div className="bg-prog-color rounded-md text-xs leading-none py-1 text-center text-gray-700" style={{"width": `${value.toString()}`}}>{value}%</div>
                 </div>
             }
         </div>

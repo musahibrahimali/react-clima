@@ -1,28 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import {DrawerStyles} from "./DrawerStyles";
-import {useStateValue} from "../../provider/AppState";
 import Paper from '@mui/material/Paper';
-import actionTypes from '../../utils/Utils';
+import { Loader } from '../exports';
 
 const Drawer = (props) => {
-    const {handleOpenDrawer} = props;
+    const {
+        handleOpenDrawer,
+        isDrawerOpen,
+        isSearchLoading,
+        onSubmit,
+        setLocation,
+    } = props;
     const styles = DrawerStyles();
-    const [{ isDrawerOpen }, dispatch] = useStateValue();
-    const [searchString, setSearchString] = useState('');
-
-    // open drawer
-    const handleData = () => {
-        dispatch({
-            type: actionTypes.SET_DATA,
-            searchData: searchString,
-        });
-
-        dispatch({
-            type: actionTypes.OPEN_DRAWER,
-            isDrawerOpen: false,
-        });
-    }
 
     return (
         <Paper classes={{root: styles.root}}>
@@ -43,20 +33,21 @@ const Drawer = (props) => {
                                         className="w-full rounded p-2 focus:outline-none" 
                                         type="text" 
                                         placeholder="Search" 
-                                        onChange={
-                                            (event) => setSearchString(event.target.value)
-                                        }
+                                        onChange={e => setLocation(e.target.value)}
                                     />
 
                                     <button 
                                         className="bg-blue-700 hover:bg-red-300 rounded text-white p-2 pl-4 pr-4"
-                                        onClick={handleData}
+                                        onClick={onSubmit}
                                     >
                                         <p className="font-semibold text-xs">Search</p>
                                     </button>
                                 </div>
                             </div>
                             
+                            {/* Loader */}
+                            {isSearchLoading && <Loader />}
+
                         </div>
                 </Paper>
             </SwipeableDrawer>

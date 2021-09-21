@@ -3,8 +3,6 @@ import React from 'react';
 function CardTile(props) {
     const {date, maxTemp, image, minTemp} = props;
 
-    console.log(date);
-
     return (
         <div className="w-32 h-48 md:w-32 md:h-48 bg-component-bg p-4 flex flex-col justify-between mx-2 mt-4">
             {/* day or date */}

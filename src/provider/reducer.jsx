@@ -4,7 +4,7 @@ export const initialState = {
     theme: false,
     isDrawerOpen: false,
     isLoading: true,
-    searchData: "",
+    searchData: null,
 };
 
 
@@ -28,7 +28,7 @@ const reducer = (state, action) => {
         case actionTypes.SET_DATA:
             return {
                 ...state,
-                data: action.data,
+                searchData: action.searchData,
             }
         default:
             return state;

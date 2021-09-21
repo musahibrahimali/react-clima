@@ -1,33 +1,31 @@
 import React from 'react';
 import {shower} from '../assets/assets';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
-import actionTypes from '../utils/Utils';
-import {useStateValue} from '../provider/AppState';
 import './SideBar.css';
 import { Drawer } from './exports';
 
 function SideBar(props) {
-    const {data} = props;
-    const [{ isDrawerOpen }, dispatch] = useStateValue();
+    const {
+        data,
+        isSearchLoading,
+        onSubmit,
+        setLocation,
+        handleOpenDrawer,
+        isDrawerOpen,
+    } = props;
 
-    // open drawer
-    const handleOpenDrawer = () => {
-        if(isDrawerOpen){
-            dispatch({
-                type: actionTypes.OPEN_DRAWER,
-                isDrawerOpen: false,
-            });
-        }else{
-            dispatch({
-                type: actionTypes.OPEN_DRAWER,
-                isDrawerOpen: true,
-            });
-        }
-    }
+
 
     return (
         <>
-            <Drawer handleOpenDrawer={handleOpenDrawer} />
+            <Drawer 
+                handleOpenDrawer={handleOpenDrawer}
+                isSearchLoading={isSearchLoading}
+                onSubmit={onSubmit}
+                isDrawerOpen={isDrawerOpen}
+                setLocation={setLocation}
+            />
+
             <div className="h-full w-full p-12 md:py-4 flex flex-col justify-between">
                 {/* the top bar */}
                 <div className="flex md:flex-row justify-between">
