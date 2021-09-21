@@ -4,7 +4,7 @@ export const initialState = {
     theme: false,
     isDrawerOpen: false,
     isLoading: true,
-    data: null,
+    searchData: "",
 };
 
 

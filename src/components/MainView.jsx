@@ -35,7 +35,7 @@ function MainView(props) {
                 {/* the next updates including today */}
                 <div className="grid grid-cols-2 gap-2 md:flex md:flex-row justify-center mt-8 md:mt-12">
                     <CardTile 
-                        date={data.list[1].dt_txt.split(" ").slice(0)[0]} 
+                        date={"Tomorow"} 
                         image={heavy_rain} 
                         minTemp={data.list[1].main.temp_min} 
                         maxTemp={data.list[1].main.temp_max}

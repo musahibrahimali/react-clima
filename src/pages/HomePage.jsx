@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {SideBar,MainView} from '../components/exports';
+import { useStateValue } from '../provider/AppState';
 import {ShimmerCard} from '../widgets/widgets';
 
 
@@ -12,7 +13,9 @@ function HomePage() {
     const [position, setPosition] = useState(initialPosition);
     const [isLocation, setIsLocation] = useState(false);
 
-    
+    const [{searchData}] = useStateValue();
+    console.log(searchData);
+
     // fetch weather data
     const fetData = async () => {
         setIsloading(true);
