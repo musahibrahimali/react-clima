@@ -22,7 +22,6 @@ const Drawer = (props) => {
             type: actionTypes.OPEN_DRAWER,
             isDrawerOpen: false,
         });
-
     }
 
     return (
