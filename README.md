@@ -39,7 +39,7 @@
 
 ![screenshot](demo-image.png)
 
-![Preview](https://youtu.be/i7JUf6ati4I)
+view demo at >>> <https://www.youtube.com/watch?v=i7JUf6ati4I />
 
 Introduce your projects by taking a screenshot, video recordings or a gif. Try to tell us about the solution you built by answering the following:
 
